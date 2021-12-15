@@ -3,6 +3,9 @@ package ppt;
 import java.util.Scanner;
 
 public class Prac2 {
+
+
+
         public static void main(String[] args ){
             int i = 0;
             Scanner sc = new Scanner(System.in);
