@@ -9,7 +9,7 @@ public class Prac6 {
     private static int vCount; //이긴 횟수 고유 변수
     private static int lCount; // 진 횟수 고유 변수
     private static int dCount; // 비긴 횟수 고유 변수
-
+    private static String g;
 
     public static void main(String[] args) {
 
@@ -20,10 +20,12 @@ public class Prac6 {
         int c;//c는 PC
         int d;//d는 나
         Scanner sc = new Scanner(System.in); //내가 입력할 스캐너
-        while(true) {
+
+
+            while(true) {
                 Random rd = new Random();//rd
                 c = (int) (Math.random() * 3) + 1;//c는 컴퓨터 랜덤값
-                System.out.println(c);
+//                System.out.println(c);
                 //1=주먹 2=가위 3=보
                 System.out.println("1~3 사이의 숫자를 입력하시오");
                 d = sc.nextInt(); // 내가 입력하는부분
@@ -87,7 +89,12 @@ public class Prac6 {
                 System.out.println("이긴횟수:" + vCount);
                 System.out.println("진 횟수:" + lCount);
                 System.out.println("비긴 횟수:" + dCount);
-        }
+                System.out.println("계속 게임을 진행 합니까? y or n");
+
+                g = sc.nextLine();
+                System.out.println();
+            }
+
 
     }
 
