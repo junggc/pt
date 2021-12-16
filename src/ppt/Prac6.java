@@ -9,7 +9,7 @@ public class Prac6 {
     private static int vCount; //이긴 횟수 고유 변수
     private static int lCount; // 진 횟수 고유 변수
     private static int dCount; // 비긴 횟수 고유 변수
-    private static String g;
+    public static String g;
 
     public static void main(String[] args) {
 
