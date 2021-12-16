@@ -9,14 +9,16 @@ public class t22 {
     //if문을 활용해서 가위바위보를 진행
     //내가 이긴경우 a 출력
     //내가 진 경우 b출력
+    //비긴 경우 g 출력
     //내가 이긴 횟수는 e에 대입
     //내가 진 횟수는 f에 대입
+
 
     //결과출력메소드 호출
 
     //public
     //상수 a = 1;
-    public final int a=1;
+    public static final int a=1;
 
     //public
     //고유한 상수 b = 2;
@@ -36,7 +38,9 @@ public class t22 {
     //public
     //고유한 변수 f = 0;
     public static int f=0;
-
+    //public
+    //고유한 변수 g = 6;
+    public static int g=6;
 
 
     //결과 출력메소드 작성
