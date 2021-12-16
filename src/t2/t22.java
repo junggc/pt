@@ -12,7 +12,7 @@ public class t22 {
     //비긴 경우 g 출력
     //내가 이긴 횟수는 e에 대입
     //내가 진 횟수는 f에 대입
-
+    //내가 비긴 횟수는 h에 대입
 
     //결과출력메소드 호출
 
@@ -29,20 +29,23 @@ public class t22 {
     //고유한 변수 d = 4;
     public static int d=4;
 
+
     //private
     //변수 c = 3;
-    private int c=3;
+   public static int c = 3;
     //public
     //고유한 변수 e = 0;
+    //결과 출력메소드 작성
     public static int e=0;
+
     //public
     //고유한 변수 f = 0;
     public static int f=0;
     //public
     //고유한 변수 g = 6;
-    public static int g=6;
+    public static int g=0;
+    //고유한 변수 h = 6;
+    public static int h=0;
 
-
-    //결과 출력메소드 작성
 
 }
