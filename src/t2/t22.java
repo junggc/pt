@@ -32,7 +32,7 @@ public class t22 {
 
     //private
     //변수 c = 3;
-   public static int c = 3;
+   public static int c = 0;
     //public
     //고유한 변수 e = 0;
     //결과 출력메소드 작성
