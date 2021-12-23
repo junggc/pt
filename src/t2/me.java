@@ -18,7 +18,7 @@ public class me {
 
     public void 입_학생에게이름을알려줘(String name){
         student s = new student();
-        String b = s.너의이름은(name);
-        System.out.println(b);
+         s.너의이름은(name);
+        System.out.println();
     }
 }

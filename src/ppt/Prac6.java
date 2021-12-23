@@ -3,8 +3,7 @@ package ppt;
 import t2.T22;
 import java.util.*;
 
-import static t2.T22.c;
-import static t2.T22.d;
+import static t2.T22.*;
 
 
 public class Prac6 {
@@ -14,6 +13,7 @@ public class Prac6 {
     public static String p;
 
     public static void main(String[] args) {
+
 
         T22.e = 0; //이긴경우 e
         T22.f = 0; //진 경우 f
@@ -27,22 +27,24 @@ public class Prac6 {
                 while(true) {
                     Random rd = new Random();//rd
                     T22.d = (int) (Math.random() * 3) + 1;//d는 컴퓨터 랜덤값
-                    System.out.println(d);
+//                    System.out.println(d);
                     //1=주먹 2=가위 3=보
                     System.out.println("1~3 사이의 숫자를 입력하시오");
 
-                    try {
-                        T22.c = sc.nextInt(); // 내가 입력하는부분
-
-                    }catch (Exception e){
                         try {
                             T22.c = Integer.parseInt(sc.nextLine());
+                            if(c!=1 && c!=2 && c!=3){
+                                System.out.println("1~3 까지 입력하세요");
+                                continue;
+                            }
+
+
                         }catch(Exception e2){
                             System.out.println("잘못 입력했습니다 숫자 1~3만 입력하세요");
                             continue;
                         }
 
-                    }
+
 
 
                     if (c == d) {
@@ -101,9 +103,14 @@ public class Prac6 {
                     } else if (T22.c == T22.d) {
                         System.out.println(T22.g);
                     }
-                    System.out.println("이긴횟수:" + T22.e);
-                    System.out.println("진 횟수:" + T22.f);
-                    System.out.println("비긴 횟수:" + T22.h);
+//                    System.out.println("이긴횟수:" + T22.e);
+//                    System.out.println("진 횟수:" + T22.f);
+//                    System.out.println("비긴 횟수:" + T22.h);
+
+                    T22 total = new T22();
+                    total.win();total.draw();total.lose();
+
+
                     loop1:
                     while (true) {
                         System.out.println("계속 게임을 진행 합니까? y or n");
@@ -118,8 +125,13 @@ public class Prac6 {
                             System.out.println("Game Over");
                             break;
                         }
-                    }break;
+                    }
+                break;
                 }
+                T22 totalgame = new T22();
+                totalgame.totalgame();
+
+
             }
 
 

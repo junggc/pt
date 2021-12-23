@@ -15,6 +15,7 @@ public class T22 {
         this.h = h;
 
     }
+
 //t22 클래스를 선언하여
     //d에 랜덤한숫자를 대입하고
     //내가 입력받은 값을 c에 대입하여
@@ -27,6 +28,19 @@ public class T22 {
     //내가 비긴 횟수는 h에 대입
 
     //결과출력메소드 호출
+    public void win(){
+        System.out.print(e+"승");
+    }
+    public void draw(){
+        System.out.print(h+"무");
+    }
+    public void lose(){
+        System.out.println(f+"패");
+    }
+
+    public void totalgame(){
+        System.out.println("총 게임 전적 " + e +"승 " + h + "무 " + f + "패 ");
+    }
 
     //public
     //상수 a = 1;
