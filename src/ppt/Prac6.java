@@ -33,10 +33,14 @@ public class Prac6 {
 
                     try {
                         T22.c = sc.nextInt(); // 내가 입력하는부분
-                    }catch (Exception e){
-                        sc.nextLine();
 
-                        System.out.println("잘못 입력했습니다 숫자 1~3만 입력하세요");
+                    }catch (Exception e){
+                        try {
+                            T22.c = Integer.parseInt(sc.nextLine());
+                        }catch(Exception e2){
+                            System.out.println("잘못 입력했습니다 숫자 1~3만 입력하세요");
+                            continue;
+                        }
 
                     }
 
@@ -109,12 +113,12 @@ public class Prac6 {
                             continue loop;
                         } else if (!p.equals("y") && !p.equals("n")) {
                             System.out.println("잘못 입력하셨습니다.y 또는 n 으로 입력하세요");
-                            break loop1;
+                            continue loop1;
                         } else if (p.equals("n")) {
                             System.out.println("Game Over");
-                            System.exit(0);
+                            break;
                         }
-                    }
+                    }break;
                 }
             }
 
