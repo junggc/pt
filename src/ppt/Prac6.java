@@ -52,6 +52,8 @@ public class Prac6 {
                         System.out.println("비겼습니다");
                     } else if (c == 1 && T22.d == 2) {
                         T22.e++;
+
+                        //t22 e  e+1
                         System.out.println("이겼습니다");
                     } else if (c == 1 && d == 3) {
                         T22.f++;
