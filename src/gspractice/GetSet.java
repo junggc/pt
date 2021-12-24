@@ -38,5 +38,4 @@ public class GetSet {
     public void setLosevalue(int losevalue){
         this.losevalue = losevalue;
     }
-
 }
