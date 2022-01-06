@@ -116,10 +116,10 @@ public class GoGame {
                 System.out.println(gt.getDrawvalue());
                 System.out.println(gt.getLosevalue());
 
-
+                System.out.println("계속 게임을 진행 합니까? y or n");
                 loop1:
                 while (true) {
-                    System.out.println("계속 게임을 진행 합니까? y or n");
+
                     Scanner gamePlay = new Scanner(System.in);
                     gt.setRegame(gamePlay.nextLine());
                     if (gt.getRegame().equals("y")) {
