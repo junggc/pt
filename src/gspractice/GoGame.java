@@ -26,6 +26,7 @@ public class GoGame {
                     }
 
 
+
                 }catch(Exception e2){
                     System.out.println("잘못 입력했습니다 숫자 1~3만 입력하세요");
                     continue;
