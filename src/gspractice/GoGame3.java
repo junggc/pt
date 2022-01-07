@@ -9,8 +9,16 @@ public class GoGame3 {
         GetSet gt = new GetSet();//gt 클래스 변수 생성
         loop:
         while (true) {
-            Random rd = new Random();// pc 값 입력받을 random 클래스
-            gt.setComvalue((int) (Math.random() * 3) + 1);// Math.random()은 0이상 1미만 수 하나를 랜덤으로 생성한다. 여기에 곱하게3을하여 int 강제 형변환시킴 그럼 범위는 0,1,2 에 정수의값만 리턴하는데 +1하여 1,2,3 중 하나 랜덤 생성
+          //  Random rd = new Random();// pc 값 입력받을 random 클래스
+            double aa = Math.random();
+            gt.setComvalue(((int)(aa * 3)) + 1);
+
+            System.out.println(aa+" 그냥 aa 값");
+            System.out.println((aa*3)+" 곱하기 3만 한값");
+            System.out.println(((aa*3)+1)+" 곱하기 3 에  더하기 1한값");
+            System.out.println((int)((aa*3)+1)+" 인트 나중에  곱하기 3 에  더하기 1한값");
+            System.out.println((((int)(aa*3))+1)+" 인트 먼저  곱하기 3 에  더하기 1한값");
+            // Math.random()은 0이상 1미만 수 하나를 랜덤으로 생성한다. 여기에 곱하게3을하여 int 강제 형변환시킴 그럼 범위는 0,1,2 에 정수의값만 리턴하는데 +1하여 1,2,3 중 하나 랜덤 생성
             System.out.println(gt.getComvalue());
             System.out.println("1~3까지 숫자 입력");// 숫자입력 하라는 메시지 출력
             loop1:
