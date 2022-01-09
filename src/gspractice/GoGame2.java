@@ -13,7 +13,7 @@ public class GoGame2 { //클래스명
 
         loop: // 아래 반복문 안에서 loop를 타면 여기로 위치 이동후 다시 반복문 시작
         while (true) {// 게임을 마친후 다시 할경우 반복 시작되는 부분
-            Random rd= new Random(); //컴퓨터의 임의의 값 rd 클래스변수
+            Random rd = new Random(); //컴퓨터의 임의의 값 rd 클래스변수
             gt.setComvalue((int)(Math.random()*3)+1); //숫자 3까지 랜덤값 나오게
 
             System.out.println(gt.getComvalue());
